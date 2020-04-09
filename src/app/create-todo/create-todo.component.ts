@@ -16,6 +16,9 @@ export class CreateTodoComponent implements OnInit {
 
   addToDo() {
     this.todoService.addTodo(this.todoTitle);
+    console.log(this.todoTitle);
+
+    this.todoTitle = '';
   }
 
 }
